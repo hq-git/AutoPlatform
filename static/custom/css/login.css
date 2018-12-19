@@ -1,0 +1,9 @@
+.cls-content {
+    padding-top: 22vh !important;
+}
+.panel-body .errormsg {
+    color: red ;
+    float: right ;
+    margin-right: 40px ;
+    opacity: 1 ;
+}
