@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Login Page</title>
+
+    <!--STYLESHEET-->
+    <!--=================================================-->
+    <!--Open Sans Font [ OPTIONAL ] -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="/static/nifty/css/bootstrap.min.css" rel="stylesheet">
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="/static/nifty/css/nifty.min.css" rel="stylesheet">
+    <!--Premium Icons [ OPTIONAL ]-->
+    <link href="/static/nifty/premium/icon-sets/icons/line-icons/premium-line-icons.min.css" rel="stylesheet">
+    <link href="/static/nifty/premium/icon-sets/icons/solid-icons/premium-solid-icons.min.css" rel="stylesheet">
+    <!--=================================================-->
+    <!--Page Load Progress Bar [ OPTIONAL ]-->
+    <link href="/static/nifty/css/pace.min.css" rel="stylesheet">
+    <!-- Create your own class to load custum image [ SAMPLE ]-->
+    <link href="/static/custom/css/login.css" rel="stylesheet">
+
+    <!--=================================================
+    REQUIRED
+    You must include this in your project.
+    RECOMMENDED
+    This category must be included but you may modify which plugins or components which should be included in your project.
+    OPTIONAL
+    Optional plugins. You may choose whether to include it in your project or not.
+    Detailed information and more samples can be found in the document.
+    =================================================-->
+        
+</head>
+<body>
+    <div id="container" class="cls-container">
+		<!-- BACKGROUND IMAGE -->
+		<!--===================================================-->
+		<div id="bg-overlay" class="bg-img" style="background-image: url(/static/nifty/img/bg-img-3.jpg)"></div>
+
+		<!-- LOGIN FORM -->
+		<!--===================================================-->
+		<div class="cls-content">
+		    <div class="cls-content-sm panel">
+		        <div class="panel-body">
+		            <div class="mar-ver pad-btm">
+		                <h1 class="h3">Account Login</h1>
+		                <p>Sign In to your account</p>
+		            </div>
+		            <form action="login" method="post">
+		                <div class="form-group">
+		                    <input type="text" name="username" class="form-control" placeholder="用户名" autofocus>
+		                </div>
+		                <div class="form-group">
+		                    <input type="password" name="password" class="form-control" placeholder="密码">
+		                </div>
+		                <div class="checkbox pad-btm text-left">
+		                    <input id="form-checkbox" class="magic-checkbox" type="checkbox">
+		                    <label for="form-checkbox">记住帐号</label>
+                            <span class="errormsg">{{ errormsg }}</span>
+		                </div>
+		                <button class="btn btn-primary btn-lg btn-block" type="submit">登 录</button>
+		            </form>
+		        </div>
+		
+		        <div class="pad-all" style="display: none;">
+		            <a href="#" class="btn-link mar-rgt">忘记密码 ?</a>
+		            <a href="#" class="btn-link mar-lft">注册</a>
+		
+		            <div class="media pad-top bord-top">
+		                <div class="pull-right">
+		                    <a href="#" class="pad-rgt"><i class="psi-facebook icon-lg text-primary"></i></a>
+		                    <a href="#" class="pad-rgt"><i class="psi-twitter icon-lg text-info"></i></a>
+		                    <a href="#" class="pad-rgt"><i class="psi-google-plus icon-lg text-danger"></i></a>
+		                </div>
+		                <div class="media-body text-left text-bold text-main">
+		                    Login with
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<!--===================================================-->
+
+    </div>
+    <!--===================================================-->
+    <!-- END OF CONTAINER -->
+
+    <script src="/static/nifty/js/jquery-1.12.4.min.js"></script>
+
+    <!--Page Load Progress Bar [ OPTIONAL ]-->
+    <script src="/static/nifty/js/pace.min.js"></script>
+
+    <script src="/static/custom/js/login.js"></script>
+    </body>
+</html>
