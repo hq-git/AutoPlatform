@@ -5,7 +5,7 @@
 .git/
 
 # Python temporary files
-__pycache__/
+*/?__pycache__/
 *.pyc
 
 # Python venv
